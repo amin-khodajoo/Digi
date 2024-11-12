@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+@font-face {
+  font-family: Yekan;
+  src: url(../../Fonts/iranYekan/IRANYekanWeb-Bold.eot);
+  src: url(../../Fonts/iranYekan/IRANYekanWeb-Bold.ttf);
+  src: url(../../Fonts/iranYekan/IRANYekanWeb-Bold.woff);
+  src: url(../../Fonts/iranYekan/IRANYekanWeb-Bold.woff2);
+}
+
+:root {
+  --font-family: Yekan;
+}
+
+:is(p) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0f0f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c0c2c5;
+}
+
+

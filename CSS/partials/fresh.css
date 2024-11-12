@@ -1,0 +1,135 @@
+.fresh {
+  margin-top: 16px;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .fresh-box {
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    width: 1336px;
+    height: inherit;
+    background-color: #ebeeed;
+    border-radius: 16px;
+    background-image: url(../../images/fresh/background.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    .f-link-center {
+      all: unset;
+      cursor: pointer;
+      width: inherit;
+      height: inherit;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  .f-1 {
+    width: 66px;
+    height: 62px;
+  }
+  .f-2 {
+    width: calc(356px - 66px);
+    height: inherit;
+    img {
+      width: 250px;
+      height: 28px;
+    }
+  }
+  .p-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #029a49;
+    width: 110.5px;
+    height: 26;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 16px;
+    p {
+      color: #fff;
+    }
+  }
+}
+
+.left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  .f-kala {
+    width: 492px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    .f-link {
+      text-decoration: none;
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      flex-flow: column nowrap;
+      .f-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          margin-top: 6px;
+          width: 58px !important;
+          height: 58px !important;
+          border-radius: 50%;
+        }
+      }
+      .f-span {
+        width: 34px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d32f2f !important;
+        font-size: 12px;
+        border-radius: 16px;
+        font-weight: 400;
+        span {
+          font-family: var(--font-family);
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .more {
+    background-color: #fff;
+    width: 144px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      color: #029a49;
+      font-family: var(--font-family);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    img {
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

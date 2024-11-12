@@ -1,0 +1,35 @@
+.footer-3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  direction: rtl;
+
+  .footer-3-box {
+    width: 1552px;
+    height: 104px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .footer-3-part {
+    text-decoration: none;
+      width: 302px;
+      height: inherit;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      .footer-3-p {
+        color: rgb(63, 64, 100);
+        font-family: var(--font-family);
+        font-size: 11px;
+        font-weight: 400;
+      }
+      .footer-3-img{
+        width: 56px;
+        height: 56px;
+      }
+    }
+  }
+}

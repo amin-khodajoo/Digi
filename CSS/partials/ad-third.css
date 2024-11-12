@@ -1,0 +1,22 @@
+.ad-third {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .ad-third-box {
+    width: 1336px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    .ad-third-box-a {
+      width: 660px;
+      height: 264px;
+      .ad-third-box-a-img {
+        width: inherit;
+        height: inherit;
+        border-radius: 16px;
+      }
+    }
+  }
+}

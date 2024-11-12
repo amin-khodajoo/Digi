@@ -1,0 +1,27 @@
+.ad-second {
+  width: 100%;
+  height: 264px;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  direction: rtl;
+  margin-bottom: 16px;
+
+  .ad-second-box {
+    width: 1336px;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ad-second-box-a {
+        width: 660px;
+        height: inherit;
+      .ad-second-box-a-img {
+        width: inherit;
+        height: inherit;
+        border-radius: 16px;
+      }
+    }
+  }
+}

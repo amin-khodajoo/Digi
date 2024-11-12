@@ -1,0 +1,73 @@
+.cat-3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    user-select: none;
+    .cat-3-box{
+        width: 1592px;
+        padding: 20px 0;
+
+
+        .swiper {
+            width: inherit;
+            height: inherit;
+            padding: 0 15px;
+            
+            .swiper-slide{
+                width: 114px;
+                height: 150px;
+                background-color: #fff;
+                border-radius: 16px;
+                text-decoration: none;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: start;
+                align-items: center;
+                padding-top: 10px;
+                .slide-img{
+                    width: 90px;
+                    height: 90px;
+                }
+                .slide-sp{
+                    font-family: var(--font-family);
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: #000;
+                    text-align: center;
+                }
+
+                &:first-of-type{
+                    background-color: #F0F0F1;
+                    .slide-sp{
+                        font-weight: 700;
+                    }
+                }
+            }
+            .swiper-button-next,
+            .swiper-rtl .swiper-button-prev,
+            .swiper-button-prev,
+            .swiper-rtl .swiper-button-next {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: #fff;
+              border: 1px solid whitesmoke;
+            }
+    
+            .swiper-button-next:after,
+            .swiper-button-prev:after {
+              font-size: 10px;
+              color: #2b2b2b;
+              font-weight: bold;
+            }
+    
+            .swiper-button-next.swiper-button-disabled,
+            .swiper-button-prev.swiper-button-disabled {
+              opacity: 0;
+            }
+          }
+    }
+}

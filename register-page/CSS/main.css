@@ -1,0 +1,150 @@
+@font-face {
+  font-family: Yekan;
+  src: url(../../Fonts/iranYekan/IRANYekanWeb-Bold.eot);
+  src: url(../../Fonts/iranYekan/IRANYekanWeb-Bold.ttf);
+  src: url(../../Fonts/iranYekan/IRANYekanWeb-Bold.woff);
+  src: url(../../Fonts/iranYekan/IRANYekanWeb-Bold.woff2);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0f0f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c0c2c5;
+}
+
+
+
+:root {
+  --font-family: Yekan;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 445px;
+  border: 1px solid #e0e0e2;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+  padding: 32px;
+
+  /* about <img> */
+  .img-r {
+    width: 100px;
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* about <h1> */
+  .h-r {
+    height: 40px;
+    width: 334px;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family);
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 28px;
+  }
+
+  /* about <p> */
+  .p-r {
+    display: flex;
+    align-items: center;
+    width: 334px;
+    height: 26px;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(63, 64, 100);
+  }
+  .p-r1 {
+    margin-top: 16px;
+  }
+  .p-r2 {
+    margin-bottom: 16px;
+  }
+  .p-r3 {
+    width: 334px;
+
+    font-family: var(--font-family);
+    font-size: 11px;
+    font-weight: 400;
+    color: rgb(63, 64, 100);
+  }
+
+  /* about <a> */
+  .a-r {
+    font-family: var(--font-family);
+    font-size: 11px;
+    font-weight: 400;
+    color: rgb(0, 142, 178);
+    text-decoration: none;
+  }
+
+  /* about box-1 */
+  .box-r1 {
+    width: 334px;
+    padding: 0 8px;
+    margin-bottom: 33px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #00d9ff;
+    .box-input {
+      all: unset;
+      width: 316px;
+      height: inherit;
+      padding: 8px;
+    }
+  }
+
+  /* about box-2 */
+  .box-r2 {
+    all: unset;
+    cursor: pointer;
+    width: 334px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #ef4056;
+    .submit {
+      font-family: var(--font-family);
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+}

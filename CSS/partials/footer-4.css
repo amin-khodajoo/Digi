@@ -1,0 +1,109 @@
+.footer-4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  .footer-4-box {
+    width: 1552px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer-4-part {
+      width: 398px;
+      height: inherit;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: top;
+      align-items: start;
+      row-gap: 16px;
+
+      &:last-of-type {
+        padding-right: 40px;
+      }
+
+      .footer-4-p {
+        color: rgb(63, 64, 100);
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      .footer-4-a {
+        text-decoration: none;
+        color: rgb(129, 133, 139);
+        font-family: var(--font-family);
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .footer-4-img-box {
+        width: inherit;
+        height: 40px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        column-gap: 30px;
+        .footer-4-a {
+          width: 40px;
+          height: 40px;
+          .footer-4-img {
+            width: inherit;
+            height: inherit;
+          }
+        }
+      }
+
+      .footer-4-form {
+        width: 323px;
+        height: 67px;
+        display: flex;
+        justify-content: center;
+        column-gap: 8px;
+        align-items: center;
+        .footer-4-cover {
+          width: 261px;
+          height: 48px;
+          padding: 0 8px;
+          background-color: #f0f0f1;
+          border-radius: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .footer-4-input {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            width: 245px;
+            height: 32px;
+            padding: 0 8px;
+            font-family: var(--font-family);
+            font-size: 15px;
+            font-weight: 400;
+            color: #000000 !important;
+          }
+        }
+
+        .footer-4-button {
+          all: unset;
+          width: 54px;
+          height: 48px;
+          background-color: #e0e0e2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
+
+          .footer-4-submit {
+            font-family: var(--font-family);
+            font-size: 10;
+            font-weight: 400;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

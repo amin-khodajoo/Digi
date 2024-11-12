@@ -1,0 +1,199 @@
+#close-more,
+#open-more {
+  display: none;
+}
+
+#close-more:checked ~ .more {
+  display: none;
+}
+
+#open-more:checked ~ .more {
+  width: 100%;
+  height: 100%;
+  background-color: #0000004d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 21;
+
+  .more-box {
+    background-color: #fff;
+    width: 800px;
+    height: 620px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    overflow: hidden;
+
+    /* top */
+    .more-box-top {
+      padding: 0 20px;
+      width: inherit;
+      height: 58.6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      direction: rtl;
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+      .more-box-top-top {
+        padding: 12px 0;
+        border-bottom: 1px solid #e0e0e2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        direction: rtl;
+
+        .top-img {
+          width: 24px !important;
+          height: 24px !important;
+        }
+        .top-p {
+          font-family: var(--font-family);
+          font-size: 16px;
+          font-weight: 700;
+          width: 704px;
+          text-align: right;
+        }
+        .top-x {
+          font-size: 30px;
+          font-weight: 900;
+          cursor: pointer;
+        }
+      }
+    }
+
+    /* bottom */
+    .more-box-bottom {
+      width: inherit;
+      height: 560px;
+      padding: 16px 20px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      direction: rtl;
+
+      .bottom-first {
+        width: 743px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: right;
+        align-items: center;
+        row-gap: 12px;
+        column-gap: 45px;
+
+        .first-item {
+          width: 80px;
+          height: 127.5px;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+
+          .bottom-f-img-box {
+            width: inherit;
+            display: flex;
+            justify-content: center;
+            .bottom-f-img {
+              width: 52px;
+              height: 52px;
+            }
+          }
+          .bottom-f-sp {
+            font-family: var(--font-family);
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 24px;
+            color: rgb(63, 64, 100);
+            margin: 4px 0 0;
+            padding: 0 16px;
+            height: 48px;
+            width: 80px !important;
+            text-align: center;
+          }
+        }
+      }
+
+      .bottom-second {
+        width: 730px;
+        height: 30px;
+        margin-top: 24px;
+        color: #81858b;
+        font-family: var(--font-family);
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .bottom-third {
+        width: 743px;
+        height: 393px;
+        margin-top: 8px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+
+        & a:nth-child(3) {
+          height: 106px;
+        }
+        & a:nth-child(5) {
+          height: 82px;
+        }
+
+        .third-box {
+          padding: 12px;
+          border-radius: 16px;
+          border: 1px solid #e0e0e2;
+          width: 365.5px;
+          display: flex;
+          justify-content: space-between;
+          align-items: top;
+          text-decoration: none;
+
+          .third-right {
+            width: 52px;
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            .right-img {
+              width: 52px;
+              height: 52px;
+            }
+          }
+          .third-left {
+            width: 275px;
+
+            .left-top {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .left-top-right {
+                font-family: var(--font-family);
+                font-size: 15px;
+                font-weight: 700;
+                color: rgb(63, 64, 100);
+              }
+              .left-top-left {
+                width: auto;
+                height: auto;
+              }
+            }
+
+            .left-bottom {
+              font-family: var(--font-family);
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              color: rgb(129, 133, 139);
+            }
+          }
+        }
+      }
+    }
+  }
+}

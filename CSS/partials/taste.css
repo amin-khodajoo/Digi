@@ -1,0 +1,116 @@
+.taste {
+  width: 100%;
+  height: 418.23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  margin-bottom: 16px;
+  .taste-box {
+    width: 1336px;
+    height: 418.23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid #E0E0E2;
+    border-radius: 16px;
+
+    .taste-box-box {
+      width: 332.5px;
+      height: 416px;
+      padding: 8px 20px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      align-items: center;
+      border-left: 1px solid #E0E0E2;
+      &:last-of-type{
+        border: none;
+      }
+      .taste-box-box-part-1 {
+        width: 293px;
+        height: 65.5px;
+        .taste-box-box-part-1-title {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: right;
+          align-content: left;
+          row-gap: 7px;
+          .taste-box-box-part-1-title-head {
+            font-family: var(--font-family);
+            font-size: 16px;
+            font-weight: 700;
+            color: #23254e;
+          }
+          .taste-box-box-part-1-title-p {
+            font-family: var(--font-family);
+            font-size: 11px;
+            font-weight: 400;
+            color: #81858b;
+          }
+        }
+      }
+
+      .taste-box-box-part-2-title {
+        width: 332.5px;
+        height: 294px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        .taste-box-box-part-2-title-a {
+          width: 146px;
+          height: 146px;
+          padding: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .taste-box-box-part-2-title-a-img {
+            width: 130px;
+            height: 130px;
+          }
+        }
+        .taste-box-box-part-2-title-a1 {
+          border: solid #ebe8e8;
+          border-width: 0px 0px 1px 1px;
+        }
+        .taste-box-box-part-2-title-a2 {
+          border: solid #ebe8e8;
+          border-width: 0px 0px 1px 0px;
+        }
+        .taste-box-box-part-2-title-a3 {
+          border: solid #ebe8e8;
+          border-width: 0px 0px 0px 1px;
+        }
+        .taste-box-box-part-2-title-a4 {
+          border: solid #ebe8e8;
+          border-width: 0px 0px 0px 0px;
+        }
+      }
+
+      .taste-box-box-part-3-title {
+        width: 292.5px;
+        height: 26px;
+        margin: 4px 0px 12px 0px;
+
+        .taste-box-box-part-3-title-a {
+          all: unset;
+          width: inherit;
+          height: inherit;
+          cursor: pointer;
+          color: #19bfd3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: var(--font-family);
+          font-size: 12px;
+          font-weight: 700;
+          .taste-box-box-part-3-title-a-img {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+  }
+}

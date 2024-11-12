@@ -1,0 +1,167 @@
+.best-selling {
+  width: 100%;
+  height: 404px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  .best-selling-box {
+    width: 1336px;
+    height: inherit;
+    border-radius: 16px;
+    outline: 1px solid #e0e0e2;
+    padding: 16px 0;
+
+    .best-selling-box-head {
+      width: 100%;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 16px;
+
+      .best-selling-box-head-title {
+        width: 100%;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        position: absolute;
+        .best-selling-box-head-title-part {
+          height: 44px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 10px;
+
+          .best-selling-box-head-title-p {
+            font-family: var(--font-family);
+            font-size: 21px;
+            font-weight: 500;
+          }
+          .best-selling-box-head-title-svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+      .best-selling-box-head-link {
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: top;
+        width: 100%;
+        height: 44px;
+        text-decoration: none;
+        .best-selling-box-head-link-p {
+          color: #19bfd3;
+          font-family: var(--font-family);
+          font-size: 16px;
+          font-weight: 900;
+          line-height: 30px;
+        }
+      }
+    }
+
+    .best-selling-box-body {
+      width: 1334px;
+      height: 298px;
+      margin-top: 28px;
+      padding: 0 8px;
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        width: 314.5;
+        height: 298px;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .line {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 100%;
+            height: 1px;
+          .line-x {
+            width: 197.6px;
+            height: inherit;
+            background-color: #f0f0f1;
+          }
+        }
+
+        .item {
+            all: unset;
+            cursor: pointer;
+          width: inherit;
+          height: 86px;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          .item-img {
+            border-radius: 16px;
+            margin-left: 10px;
+            width: 86px;
+            height: inherit;
+          }
+          .item-sp {
+            font-family: var(--font-family);
+            font-size: 26px;
+            font-weight: 800;
+            color: #19bfd3;
+            margin-left: 12px;
+          }
+          .item-box {
+            width: 197.5px;
+            height: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .item-box-p {
+              width: 197.5px;
+              font-family: var(--font-family);
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 26px;
+              text-align: right;
+            }
+          }
+        }
+      }
+
+      .swiper-button-prev,
+      .swiper-rtl .swiper-button-next,
+      .swiper-button-next,
+      .swiper-rtl .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 1px solid #a5a4a4;
+      }
+
+      .swiper-button-prev:after,
+      .swiper-rtl .swiper-button-next:after,
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        font-size: 10px;
+        color: #2b2b2b;
+        font-weight: bold;
+      }
+
+      .swiper-button-next.swiper-button-disabled,
+      .swiper-button-prev.swiper-button-disabled {
+        opacity: 0;
+      }
+    }
+  }
+}

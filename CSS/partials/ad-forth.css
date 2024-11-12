@@ -1,0 +1,19 @@
+.ad-forth {
+  width: 100%;
+  height: 167px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  .ad-forth-box {
+    width: 1336px;
+    height: inherit;
+    border-radius: 16px;
+
+    .ad-forth-box-img {
+      border-radius: 16px;
+      width: inherit;
+      height: inherit;
+    }
+  }
+}

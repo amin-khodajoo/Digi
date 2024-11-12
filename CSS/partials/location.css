@@ -1,0 +1,110 @@
+#open-location,
+#close-location {
+  display: none;
+}
+
+#close-location:checked ~ .location{
+  display: none;
+}
+
+#open-location:checked ~ .location {
+  width: 100%;
+  height: 100%;
+  background-color: #0000004d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 21;
+
+  .location-box {
+    background-color: #fff;
+    width: 460px;
+    height: 620px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    overflow: hidden;
+
+    .location-box-top {
+      padding: 0 20px;
+
+      .location-box-top-top {
+        border-bottom: 1px solid #e6e6e8;
+        height: 58.6px;
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        direction: rtl;
+
+        .top-x {
+          font-size: 30px;
+          font-weight: 900;
+          cursor: pointer;
+        }
+
+        .top-p {
+          width: 238.5px;
+          font-family: var(--font-family);
+          font-size: 16px;
+          font-weight: 700;
+          text-align: right;
+        }
+      }
+    }
+
+    .location-box-bottom {
+      width: inherit;
+      height: 560px;
+      padding: 16px 20px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      direction: rtl;
+
+      .bottom-item-head {
+        cursor: pointer;
+        padding: 12px 0;
+        height: 56.25px;
+        width: 403px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .item-left-p {
+          font-family: var(--font-family);
+          font-size: 15px;
+          font-weight: 700;
+          color: rgb(25, 191, 211);
+          width: 363px;
+        }
+        .item-right-img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .bottom-item {
+        cursor: pointer;
+        padding: 12px 0;
+        height: 56.25px;
+        width: 403px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #F0F0F1;
+        .item-left-p {
+          font-family: var(--font-family);
+          font-size: 15px;
+          font-weight: 700;
+          color: rgb(63, 64, 100);
+          width: 363px;
+        }
+        .item-right-img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
